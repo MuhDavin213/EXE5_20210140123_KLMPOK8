@@ -49,13 +49,27 @@ namespace exercise_5
         }
         public void Display()
         {
-
+            
         }
     }
     internal class Program
     {
         static void Main(string[] args)
         {
+            Queue q = new Queue();
+            char ch;
+            while (true)
+            {
+                try
+                {
+                    Console.WriteLine("Menu");
+                    Console.WriteLine("1. Implement insert Operations");
+                    Console.WriteLine("2. Implement delete operation");
+                    Console.WriteLine("3. Display values");
+                    Console.WriteLine("4. Exit");
+                    Console.WriteLine("\nEnter your Choice (1-4): ");
+                }
+            }
         }
     }
 }
