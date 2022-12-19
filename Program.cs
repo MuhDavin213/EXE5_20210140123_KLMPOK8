@@ -9,11 +9,47 @@ namespace exercise_5
     class Node
     {
         public Node Davin;
+        public Node next;
         public Node Maka;
+        public string element;
 
         public Node()
         {
             this.Davin = this.Maka = null;
+        }
+        public void insert(int element)
+        {
+            Node baru = new Node();
+            if (this.Maka == null)
+            {
+                this.Davin = this.Maka = baru;
+            }
+            else
+            {
+                this.Maka.next = baru;
+                this.Maka = baru;
+            }
+            Console.WriteLine("inserted", element);
+        }
+        public void delete()
+        {
+            if (this.Davin == null)
+            {
+                Console.WriteLine("queue empty");
+                return;
+            }
+            Node temp = this.Davin;
+            this.Davin = this.Davin.next;
+
+            if(this.Davin == null)
+            {
+                this.Maka = null;
+            }
+            Console.WriteLine("item Deleted");
+        }
+        public void Display()
+        {
+
         }
     }
     internal class Program
