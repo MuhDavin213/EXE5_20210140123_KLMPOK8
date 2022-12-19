@@ -68,6 +68,12 @@ namespace exercise_5
                     Console.WriteLine("3. Display values");
                     Console.WriteLine("4. Exit");
                     Console.WriteLine("\nEnter your Choice (1-4): ");
+                    ch = Convert.ToChar(Console.ReadLine());
+                    Console.WriteLine();
+                    switch (ch)
+                    {
+
+                    }
                 }
             }
         }
