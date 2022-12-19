@@ -12,7 +12,7 @@ namespace exercise_5
         public Node next;
         public Node Maka;
         public string element;
-
+        //add node
         public Node()
         {
             this.Davin = this.Maka = null;
@@ -72,7 +72,27 @@ namespace exercise_5
                     Console.WriteLine();
                     switch (ch)
                     {
+                        case '1':
+                            {
+                                Console.Write("Enter the Number: ");
+                                int num = Convert.ToInt32(System.Console.ReadLine());
+                                Console.WriteLine();
+                                queue.insert(num);
+                            }
+                            break;
+                        case '2':
+                            {
+                                q.delete();
+                            }
+                            break;
+                        case '3':
+                            {
+                                return;
+                            }
+                            break;
 
+                            default:
+                            Console.WriteLine("Invalid")
                     }
                 }
             }
