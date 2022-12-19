@@ -8,10 +8,18 @@ using System.Threading.Tasks;
 
 namespace exercise_5
 {
-    internal class Program
+    class Program
     {
+        int MUH, MAKA, max = 5;
+        int[] queue_linkList = new int[5];
+
+        public Program()
+        {
+
+        }
         static void Main(string[] args)
         {
+
         }
     }
 }
