@@ -4,22 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-//exercise 5
-
 namespace exercise_5
 {
-    class Program
+    class Node
     {
-        int MUH, MAKA, max = 5;
-        int[] queue_linkList = new int[5];
+        public Node Davin;
+        public Node Maka;
 
-        public Program()
+        public Node()
         {
-
+            this.Davin = this.Maka = null;
         }
+    }
+    internal class Program
+    {
         static void Main(string[] args)
         {
-
         }
     }
 }
