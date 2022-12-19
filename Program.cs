@@ -31,6 +31,7 @@ namespace exercise_5
             }
             Console.WriteLine("inserted", element);
         }
+        //add Rear
         public void delete()
         {
             if (this.Davin == null)
